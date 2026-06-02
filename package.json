@@ -1,0 +1,14 @@
+{
+  "name": "consultainvest",
+  "version": "1.0.0",
+  "description": "Consulta Invest System",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.6.0",
+    "cookie": "^0.6.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

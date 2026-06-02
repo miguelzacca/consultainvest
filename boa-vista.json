@@ -1,0 +1,463 @@
+{
+  "status": "sucesso",
+  "API Full": "https://doc.apifull.com.br",
+  "dados": {
+    "HEADER": {
+      "CONTROLE": {
+        "CACHE_GERAL": [],
+        "OCORRENCIAS": [
+          {
+            "FONTE": "58",
+            "STATUS": "1",
+            "CONTEUDO": "161"
+          }
+        ],
+        "QUANTIDADE_OCORRENCIAS": "1"
+      },
+      "PARAMETROS": {
+        "CPFCNPJ": "03090951150"
+      },
+      "DADOS_RETORNADOS": {
+        "CNH": "0",
+        "CPR": "0",
+        "CSV": "0",
+        "CRLV": "0",
+        "ATPVE": "0",
+        "CADIN": "0",
+        "DPVAT": "0",
+        "SCORE": "1",
+        "EMAILS": "0",
+        "LEILAO": "0",
+        "RECALL": "0",
+        "RENACH": "0",
+        "ALERTAS": "0",
+        "BATIDOS": "0",
+        "DECISAO": "0",
+        "GRAVAME": "0",
+        "RENAINF": "0",
+        "RENAJUD": "0",
+        "CONTATOS": "0",
+        "PARENTES": "0",
+        "RECHEQUE": "0",
+        "VIZINHOS": "0",
+        "AGREGADOS": "0",
+        "BENEFICIO": "0",
+        "CCF_BACEN": "1",
+        "ENDERECOS": "0",
+        "INFOBUSCA": "0",
+        "CCF_VAREJO": "1",
+        "CONTUMACIA": "0",
+        "RESIDENTES": "0",
+        "PERDA_TOTAL": "0",
+        "REMARKETING": "0",
+        "ROUBO_FURTO": "0",
+        "ACOES_CIVEIS": "1",
+        "ANTT_VEICULO": "0",
+        "BIN_ESTADUAL": "0",
+        "BIN_NACIONAL": "0",
+        "COMPROMISSOS": "0",
+        "DADOS_GERAIS": "0",
+        "DEBITOS_IPVA": "0",
+        "PRECIFICADOR": "0",
+        "AUTO_VISTORIA": "0",
+        "MOTOR_CREDITO": "0",
+        "RELATORIO_SCR": "0",
+        "TELEFONE_FIXO": "0",
+        "ALERTA_INDICIO": "0",
+        "CREDITO_OBTIDO": "0",
+        "HIST_CONSULTAS": "0",
+        "LAUDO_CAUTELAR": "0",
+        "LIMITE_CREDITO": "0",
+        "PENDENCIAS_ISP": "0",
+        "ENDERECO_DO_CEP": "0",
+        "IMAGENS_VEICULO": "0",
+        "LOCAIS_TRABALHO": "0",
+        "PARECER_TECNICO": "0",
+        "RECHEQUE_ONLINE": "0",
+        "RELATORIO_TEXTO": "0",
+        "RENDA_PRESUMIDA": "1",
+        "COMUNICADO_VENDA": "0",
+        "INDICIO_SINISTRO": "0",
+        "LEILAO_CONJUGADO": "0",
+        "OUTROS_TELEFONES": "0",
+        "PENDENCIAS_REFIN": "0",
+        "SOMENTE_ENDERECO": "1",
+        "SOMENTE_TELEFONE": "1",
+        "TELEFONE_CELULAR": "0",
+        "TITULOS_A_VENCER": "0",
+        "VALIDACAO_PF_CNH": "0",
+        "CONSULTA_GENERICA": "0",
+        "CONTROLE_POSITIVO": "1",
+        "CREDITO_CONCEDIDO": "0",
+        "PAGAMENTO_PONTUAL": "0",
+        "QUADRO_SOCIETARIO": "0",
+        "RELATORIO_ARQUIVO": "0",
+        "RELATORIO_IMOVEIS": "0",
+        "ACOES_TRABALHISTAS": "0",
+        "ANTT_TRANSPORTADOR": "0",
+        "DEBITOS_VEICULARES": "0",
+        "INDICE_SECURITARIO": "0",
+        "PAGAMENTO_ATRASADO": "0",
+        "PONTUALIDADE_PAGTO": "0",
+        "PROCURADOS_JUSTICA": "0",
+        "PROTESTO_ANALITICO": "1",
+        "PROTESTO_SINTETICO": "0",
+        "TELEFONE_COMERCIAL": "0",
+        "CALCULO_VALORIZACAO": "0",
+        "CHECK_LIST_VEICULAR": "0",
+        "PENDENCIAS_INTERNAS": "0",
+        "PENDENCIAS_VENCIDAS": "0",
+        "TITULAR_DO_TELEFONE": "0",
+        "VALIDACAO_PF_BASICA": "0",
+        "ANALISE_KILOMETRAGEM": "0",
+        "PASSAGENS_COMERCIAIS": "1",
+        "ANTECEDENTES_PESSOAIS": "0",
+        "COMPROMETIMENTO_PAGTO": "0",
+        "DADOS_RECEITA_FEDERAL": "0",
+        "FATURAMENTO_PRESUMIDO": "0",
+        "HISTORICO_ROUBO_FURTO": "0",
+        "INFORMACOES_CRIMINAIS": "0",
+        "LOCALIZADOR_AGREGADOS": "0",
+        "RESTRICOES_SINTETICAS": "0",
+        "VALIDACAO_PF_ENDERECO": "0",
+        "VALIDACAO_PF_FILIACAO": "0",
+        "COMPROMETIMENTO_FUTURO": "0",
+        "DADOS_AGENCIA_BANCARIA": "0",
+        "FICHA_TECNICA_VEICULAR": "0",
+        "INFORMACOES_DA_EMPRESA": "0",
+        "INFORMACOES_ELEITORAIS": "0",
+        "OCUPACAO_PESSOA_FISICA": "0",
+        "PENDENCIAS_FINANCEIRAS": "1",
+        "REFERENCIA_DE_NEGOCIOS": "0",
+        "RESTRICOES_FINANCEIRAS": "0",
+        "VALIDACAO_PF_DOCUMENTO": "0",
+        "VEICULOS_POR_DOCUMENTO": "0",
+        "VINCULO_MESMO_ENDERECO": "0",
+        "DECODIFICADOR_DE_CHASSI": "0",
+        "EVENTOS_PESSOA_JURIDICA": "0",
+        "HISTORICO_DE_PAGAMENTOS": "0",
+        "HISTORICO_PROPRIETARIOS": "0",
+        "PRINCIPAIS_FORNECEDORES": "0",
+        "RELATORIO_SCR_SINTETICO": "0",
+        "VALIDACAO_PESSOA_FISICA": "0",
+        "DEBITO_DIRETO_AUTORIZADO": "0",
+        "PARTICIPACAO_EM_EMPRESAS": "1",
+        "ACOES_JUDICIAIS_COMPLETAS": "0",
+        "ALTERACAO_CARACTERISTICAS": "0",
+        "PARTICIPACAO_EM_FALENCIAS": "0",
+        "RELATORIO_SCR_ENCAPSULADO": "0",
+        "ADMINISTRADORES_DA_EMPRESA": "0",
+        "ALERTA_DOCUMENTOS_ROUBADOS": "0",
+        "CARACTERISTICAS_ADICIONAIS": "0",
+        "CONFERENCIA_MOTOR_E_CHASSI": "0",
+        "DETALHAMENTO_ACAO_JUDICIAL": "0",
+        "DIVIDA_ATIVA_PESSOA_FISICA": "0",
+        "INDICIO_SINISTRO_CONJUGADO": "0",
+        "PROPRIETARIO_ATUAL_VEICULO": "0",
+        "ALERTA_VEICULAR_PROPRIEDADE": "0",
+        "HIST_TRANSFERENCIA_NACIONAL": "0",
+        "IDENTIFICACAO_PESSOA_FISICA": "1",
+        "VALIDACAO_PF_BIOMETRIA_FACE": "0",
+        "DIVIDA_ATIVA_PESSOA_JURIDICA": "0",
+        "FALENCIAS_ACOES_RECUPERACOES": "1",
+        "RELATORIO_CREDITICIO_ARQUIVO": "0",
+        "FALENCIA_RECUPERACAO_JUDICIAL": "0",
+        "INFORMACOES_ALERTAS_RESTRICOES": "1",
+        "RELATORIO_JURIDICO_EMPRESARIAL": "0",
+        "RELATORIO_JURIDICO_PESSOA_FISICA": "0",
+        "PARTICIPACOES_EMPRESAS_CONSULTADAS": "0",
+        "ACOES_JUDICIAIS_HISTORICA_SINTETICA": "0",
+        "PERIODO_RELACIONAMENTO_FORNECEDORES": "0",
+        "PARTICIPACAO_SOCIO_ADM_OUTRAS_EMPRESAS": "0"
+      }
+    },
+    "VEICULAR": [],
+    "CREDCADASTRAL": {
+      "SCORES": {
+        "OCORRENCIAS": [
+          {
+            "RISCO": "NULO",
+            "SCORE": "518",
+            "TEXTO": "E PROVAVEL QUE 94% DAS PESSOAS COM ESSE MESMO COMPORTAMENTO, PAGUEM SUAS   CONTAS NOS PROXIMOS 6 MESES.",
+            "LAYOUT": "SCSIMPLE2020",
+            "EXECUCAO": "N",
+            "INFORMANTE": "BASE III",
+            "TIPO_SCORE": "P5",
+            "CLASSIF_ABC": "B",
+            "CLASSIF_NRO": "09",
+            "DESCR_PLANO": "POSITIVO PF",
+            "DESCR_SCORE": "P5",
+            "MODELO_SCORE": "",
+            "PROBABILIDADE_INADIMPLENCIA": "6,00"
+          }
+        ],
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "QUANTIDADE_OCORRENCIAS": "1"
+      },
+      "PROTESTOS": {
+        "DATA_MAIOR": "",
+        "DATA_ULTIMO": "",
+        "OCORRENCIAS": [],
+        "VALOR_MAIOR": "",
+        "VALOR_TOTAL": "",
+        "VALOR_ULTIMO": "",
+        "DATA_PRIMEIRO": "",
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "VALOR_PRIMEIRO": "",
+        "ULTIMO_PROTESTO": "",
+        "QUANTIDADE_OCORRENCIA": "0"
+      },
+      "ACOES_CIVEIS": {
+        "DATA_MAIOR": "",
+        "DATA_MENOR": "",
+        "DATA_ULTIMO": "",
+        "OCORRENCIAS": [],
+        "VALOR_MAIOR": "",
+        "VALOR_MENOR": "",
+        "VALOR_TOTAL": "",
+        "VALOR_ULTIMO": "",
+        "DATA_PRIMEIRO": "",
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "VALOR_PRIMEIRO": "",
+        "QUANTIDADE_OCORRENCIA": "0"
+      },
+      "RENDA_PRESUMIDA": {
+        "FAIXA": "DE R$ 7.001 ATE R$ 9.000",
+        "MENSAGEM": "RENDA ESTIMADA A PARTIR DE INFORMACOES COMPORTAMENTAIS E CADASTRAIS DO CONSUMIDOR.",
+        "DESCRICAO": "RENDA PRESUMIDA POSITIVA",
+        "RENDA_ANUAL": "",
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "DATA_REFERENCIA": "",
+        "VALOR_PRESUMIDO": "",
+        "DADOS_CADASTRO_POSITIVO": ""
+      },
+      "PEND_FINANCEIRAS": {
+        "DATA_MAIOR": "16/05/2022",
+        "PROVEDORES": [
+          {
+            "PROVEDOR": "BASE III"
+          }
+        ],
+        "OCORRENCIAS": [
+          {
+            "MOEDA": "R$",
+            "VALOR": "R$ 930,14",
+            "CREDOR": "ITAU UNIBANCO HOLDING SA",
+            "ORIGEM": "SCPC SAO PAULO - SP",
+            "CONTRATO": "000000284424132",
+            "ENTIDADE": "",
+            "SUBJUDICE": "",
+            "INFORMANTE": "BASE III",
+            "MODALIDADE": "RG",
+            "TIPO_DEVEDOR": "COMPRADOR",
+            "DATA_INCLUSAO": "10/06/2022",
+            "DATA_VENCIMENTO": "16/05/2022"
+          }
+        ],
+        "VALOR_MAIOR": "",
+        "VALOR_TOTAL": "R$ 930,14",
+        "DATA_PRIMEIRO": "16/05/2022",
+        "PERIODO_FINAL": "",
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "TOTAL_CREDORES": "",
+        "VALOR_PRIMEIRO": "",
+        "PERIODO_INICIAL": "",
+        "ULTIMO_VENCIMENTO": "",
+        "QUANTIDADE_OCORRENCIA": "1"
+      },
+      "SOMENTE_ENDERECO": {
+        "DADOS": [],
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "REGISTRO_LOCALIZADO": "0"
+      },
+      "SOMENTE_TELEFONE": {
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "REGISTRO_LOCALIZADO": "0"
+      },
+      "CONTROLE_POSITIVO": {
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "OCORRENCIAS_FATURAS_EM_ATRASO": [
+          {
+            "NOTA_COMPORTAMENTO_FATURA_EM_ATRASO": "B"
+          }
+        ],
+        "OCORRENCIAS_NOTA_COMPORTAMENTO_CONTRATOS_RECENTES": [
+          {
+            "NOTA": "E"
+          }
+        ]
+      },
+      "CH_SEM_FUNDOS_BACEN": {
+        "CPFCNPJ": "",
+        "CORRENTISTA": "",
+        "OCORRENCIAS": [],
+        "TIPO_PESSOA": "",
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "QUANTIDADE_OCORRENCIA": "0"
+      },
+      "CH_SEM_FUNDOS_VAREJO": {
+        "CPFCNPJ": "",
+        "CORRENTISTA": "",
+        "OCORRENCIAS": [],
+        "TIPO_PESSOA": "",
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "QUANTIDADE_OCORRENCIA": "0"
+      },
+      "PASSAGENS_COMERCIAIS": {
+        "OCORRENCIAS": [
+          {
+            "DATA_CONSULTA": "01/04/2026",
+            "HORA_CONSULTA": "---",
+            "CLIENTE_CONSULTA": "ALUDE TECNOLOGIA LTDA",
+            "TELEFONE_CLIENTE": "---",
+            "CIDADE_UF_CLIENTE": "---"
+          },
+          {
+            "DATA_CONSULTA": "16/03/2026",
+            "HORA_CONSULTA": "---",
+            "CLIENTE_CONSULTA": "DAYCOVAL BOA VISTA",
+            "TELEFONE_CLIENTE": "---",
+            "CIDADE_UF_CLIENTE": "---"
+          },
+          {
+            "DATA_CONSULTA": "01/06/2026",
+            "HORA_CONSULTA": "---",
+            "CLIENTE_CONSULTA": "SP-SNE/ANALISE DE CREDITO",
+            "TELEFONE_CLIENTE": "---",
+            "CIDADE_UF_CLIENTE": "---"
+          },
+          {
+            "DATA_CONSULTA": "17/04/2026",
+            "HORA_CONSULTA": "---",
+            "CLIENTE_CONSULTA": "CAIXA ECONOMICA FEDERAL",
+            "TELEFONE_CLIENTE": "---",
+            "CIDADE_UF_CLIENTE": "---"
+          }
+        ],
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "QUANTIDADE_OCORRENCIA": "4"
+      },
+      "PARTICIPACAO_EM_EMPRESAS": {
+        "OCORRENCIAS": [
+          {
+            "CNPJ": "21178246000128",
+            "PARTICIPACAO": "50,00",
+            "RAZAO_SOCIAL": "TM7 SERVICOS E SOLUCOES LTDA",
+            "PARTICIPANTE_TIPO": "FISICA",
+            "QTD_OUTROS_SOCIOS": "",
+            "PARTICIPANTE_CARGO": "SOCIO ADMINISTRADOR",
+            "PARTICIPANTE_ENTRADA": "05/04/2016",
+            "PARTICIPANTE_DOCUMENTO": "00003090951150"
+          }
+        ],
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "QUANTIDADE_OCORRENCIAS": "1"
+      },
+      "IDENTIFICACAO_PESSOA_FISICA": {
+        "MAE": "JUSLENE MACEDO E SOUZA",
+        "NOME": "THIAGO MACEDO DE FREITAS",
+        "SEXO": "MASCULINO",
+        "EMAIL": "",
+        "RG_UF": "",
+        "END_UF": "DF",
+        "END_CEP": "71909720",
+        "NOME_PAI": "",
+        "TELEFONE": "/(0061) 30474136",
+        "RG_NUMERO": "",
+        "CPF_NUMERO": "03090951150",
+        "CPF_ORIGEM": "DF, GO, MS, MT, TO",
+        "END_BAIRRO": "NORTE AGUAS CLARAS",
+        "END_CIDADE": "BRASILIA",
+        "NASCIMENTO": "01/10/1991",
+        "NUMERO_PIS": "",
+        "FAIXA_RENDA": "",
+        "NOME_SOCIAL": "",
+        "CPF_SITUACAO": "REGULAR",
+        "ESTADO_CIVIL": "NÃO INFORMADO",
+        "NATURALIDADE": "",
+        "CLASSE_SOCIAL": "",
+        "NACIONALIDADE": "",
+        "END_LOGRADOURO": "R TREZE ",
+        "GRAU_INSTRUCAO": "POS GRADUACAO INCOMPLETA",
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "TITULO_ELEITOR": "0000000000000",
+        "INDICACAO_OBITO": "",
+        "RG_DATA_EMISSAO": "-",
+        "PODER_AQUISITIVO": "",
+        "NUMERO_DEPENDENTES": "0",
+        "ULTIMO_IMPOSTO_RENDA": "",
+        "CARTAO_NACIONAL_SAUDE": "",
+        "CPF_DATA_ATUALIZACAO_RECEITA": "15/05/2026",
+        "QTD_DEPENDENTES_BOLSA_FAMILIA": ""
+      },
+      "FALENCIAS_ACOES_RECUPERACOES": {
+        "OCORRENCIAS": [],
+        "VALOR_TOTAL": "",
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "ULTIMO_REGISTRO": "",
+        "QUANTIDADE_OCORRENCIA": "0"
+      },
+      "INFORMACOES_ALERTAS_RESTRICOES": {
+        "OCORRENCIAS": [
+          {
+            "TITULO": "STATUS CONSUMIDOR",
+            "OBSERVACOES": "CONSUMIDOR PARTICIPANTE DO CADASTRO POSITIVO COM INFORMACAO",
+            "CODIGO_TIPO_INFORMACAO": "1",
+            "DESCRICAO_TIPO_INFORMACAO": "INFORMACAO"
+          }
+        ],
+        "STATUS_RETORNO": {
+          "CODIGO": "1",
+          "DESCRICAO": "CONSULTA CONCLUIDA COM SUCESSO"
+        },
+        "QUANTIDADE_OCORRENCIA": "1"
+      }
+    }
+  },
+  "aux": {
+    "data": "https://s3.us-east-005.backblazeb2.com/APIFull/889426454923863209/scpc-boavista_03090951150.pdf",
+    "type": "link"
+  }
+}
