@@ -38,7 +38,7 @@ export default async function handler(req, res) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': process.env.APIFULL_TOKEN || ''
+        'Authorization': `Bearer ${process.env.APIFULL_TOKEN || ''}`
       },
       body: JSON.stringify({
         document: document.replace(/\D/g, ''), // clean document
