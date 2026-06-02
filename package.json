@@ -4,7 +4,7 @@
   "description": "Consulta Invest System",
   "main": "index.js",
   "scripts": {
-    "dev": "vercel dev"
+    "start": "node index.js"
   },
   "dependencies": {
     "@libsql/client": "^0.6.0",

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Invest | Inteligência em Crédito</title>
+    <meta name="description" content="Sistema premium para consultas de crédito Boa Vista e Serasa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Login View -->
+    <div id="login-view" class="view-container active">
+        <div class="glass-card login-card">
+            <div class="logo-container">
+                <i class="fa-solid fa-chart-line logo-icon"></i>
+                <h1>Consulta Invest</h1>
+            </div>
+            <p class="subtitle">Acesso Restrito</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="username" placeholder="Usuário" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="btn-primary" id="login-btn">
+                    <span>Entrar</span>
+                    <div class="spinner hidden"></div>
+                </button>
+                <p id="login-error" class="error-msg"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard View -->
+    <div id="dashboard-view" class="view-container hidden">
+        <nav class="navbar glass-nav">
+            <div class="logo-container">
+                <i class="fa-solid fa-chart-line logo-icon"></i>
+                <h2>Consulta Invest</h2>
+            </div>
+            <div class="user-profile">
+                <div class="avatar"><i class="fa-solid fa-user-shield"></i></div>
+                <span>Admin</span>
+            </div>
+        </nav>
+
+        <main class="dashboard-content">
+            <div class="glass-card query-card">
+                <div class="card-header">
+                    <h3>Nova Consulta de Crédito</h3>
+                    <p>Insira o CPF ou CNPJ para realizar a pesquisa nas bases de dados.</p>
+                </div>
+                <form id="query-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <i class="fa-solid fa-id-card"></i>
+                            <input type="text" id="document" placeholder="CPF / CNPJ (apenas números)" required>
+                        </div>
+                        <div class="input-group select-group">
+                            <i class="fa-solid fa-database"></i>
+                            <select id="query-type" required>
+                                <option value="" disabled selected>Selecione a Base</option>
+                                <option value="scpc-boavista">Boa Vista SCPC</option>
+                                <option value="serasa-premium">Serasa Premium</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary" id="query-btn">
+                        <span>Consultar Agora</span>
+                        <div class="spinner hidden"></div>
+                    </button>
+                    <p id="query-error" class="error-msg"></p>
+                </form>
+            </div>
+
+            <!-- Result Area -->
+            <div id="result-container" class="glass-card result-card hidden">
+                <div class="card-header result-header">
+                    <h3>Resultado da Consulta</h3>
+                    <button id="close-result" class="btn-icon"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="pdf-wrapper">
+                    <iframe id="pdf-viewer" src="" frameborder="0"></iframe>
+                </div>
+                <div class="action-bar">
+                    <a id="download-link" href="#" target="_blank" class="btn-secondary">
+                        <i class="fa-solid fa-download"></i> Abrir PDF Externamente
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
