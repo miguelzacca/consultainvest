@@ -75,8 +75,9 @@
             <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Pagamento Pix</h3>
             <p style="color: var(--text-muted);">Copie o código abaixo e pague no seu banco</p>
           </div>
-          <div class="pix-qrcode-container" style="background: white; padding: 15px; border-radius: 12px; margin-bottom: 1rem; display: inline-block;">
-            <i class="fa-brands fa-pix" style="font-size: 4rem; color: #32bcad;"></i>
+          <div class="pix-qrcode-container" style="background: white; padding: 15px; border-radius: 12px; margin-bottom: 1rem; display: inline-flex; justify-content: center; align-items: center; min-width: 200px; min-height: 200px;">
+            <img id="pix-qrcode-img" src="" alt="QR Code Pix" class="hidden" style="max-width: 200px; max-height: 200px;" />
+            <i class="fa-brands fa-pix" id="pix-icon-placeholder" style="font-size: 4rem; color: #32bcad;"></i>
           </div>
           <div class="input-group">
             <input type="text" id="pix-copy-paste" readonly style="font-size: 0.85rem; padding-left: 1rem; text-align: center; color: #cbd5e1;" />

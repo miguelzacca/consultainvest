@@ -191,6 +191,14 @@ document.addEventListener('DOMContentLoaded', () => {
     balanceError.textContent = ''
     document.getElementById('balance-value').value = ''
     
+    const qrcodeImg = document.getElementById('pix-qrcode-img')
+    const pixIcon = document.getElementById('pix-icon-placeholder')
+    if (qrcodeImg && pixIcon) {
+      qrcodeImg.classList.add('hidden')
+      qrcodeImg.src = ''
+      pixIcon.classList.remove('hidden')
+    }
+
     addBalanceModal.classList.remove('hidden')
     setTimeout(() => addBalanceModal.classList.add('active'), 10)
   }
@@ -223,6 +231,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (res.ok && data.success && data.pixData) {
         pixCopyPaste.value = data.pixData.qr_code || ''
+        
+        const qrcodeImg = document.getElementById('pix-qrcode-img')
+        const pixIcon = document.getElementById('pix-icon-placeholder')
+        
+        if (data.pixData.qr_code_base64) {
+          qrcodeImg.src = `data:image/png;base64,${data.pixData.qr_code_base64}`
+          qrcodeImg.classList.remove('hidden')
+          pixIcon.classList.add('hidden')
+        } else if (data.pixData.qr_code) {
+          qrcodeImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(data.pixData.qr_code)}`
+          qrcodeImg.classList.remove('hidden')
+          pixIcon.classList.add('hidden')
+        } else {
+          qrcodeImg.classList.add('hidden')
+          pixIcon.classList.remove('hidden')
+        }
+
         addBalanceStep1.classList.add('hidden')
         addBalanceStep2.classList.remove('hidden')
       } else {
