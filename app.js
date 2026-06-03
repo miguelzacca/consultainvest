@@ -220,6 +220,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const value = document.getElementById('balance-value').value
 
+    if (Number(value) < 10) {
+      balanceError.textContent = 'O valor mínimo para recarga é de R$ 10,00'
+      setButtonLoading(generatePixBtn, false)
+      return
+    }
     try {
       const res = await fetch('/api/payment', {
         method: 'POST',

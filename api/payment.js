@@ -19,8 +19,8 @@ export default async function handler(req, res) {
 
   const { value } = req.body
 
-  if (!value || isNaN(value) || value <= 0) {
-    return res.status(400).json({ error: 'Valor inválido para o Pix' })
+  if (!value || isNaN(value) || value < 10) {
+    return res.status(400).json({ error: 'O valor mínimo para o Pix é R$ 10,00' })
   }
 
   try {

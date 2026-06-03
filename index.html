@@ -55,12 +55,12 @@
         <div id="add-balance-step-1">
           <div class="card-header" style="margin-bottom: 1rem;">
             <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Adicionar Saldo</h3>
-            <p style="color: var(--text-muted);">Insira o valor para gerar o Pix</p>
+            <p style="color: var(--text-muted);">Insira o valor para gerar o Pix (Mínimo R$ 10,00)</p>
           </div>
           <form id="add-balance-form">
             <div class="input-group">
               <i class="fa-solid fa-money-bill-wave"></i>
-              <input type="number" id="balance-value" placeholder="Valor (R$)" required min="1" step="any" />
+              <input type="number" id="balance-value" placeholder="Valor mínimo: R$ 10,00" required min="10" step="any" />
             </div>
             <button type="submit" class="btn-primary" id="generate-pix-btn" style="margin-top: 1rem;">
               <span>Gerar Pix</span>
