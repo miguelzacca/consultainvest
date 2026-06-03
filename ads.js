@@ -209,6 +209,9 @@
     // Simular o Vignette Ad aparecendo aleatoriamente depois de um tempo de interação
     // (Por exemplo, após um clique que navega de área)
     document.body.addEventListener('click', (e) => {
+      // Evita que cliques dentro do próprio anúncio abram outro
+      if (e.target.closest('.mock-vignette-ad')) return;
+
       // Simular chance de 10% de abrir popup ao clicar em botões/links
       if (e.target.closest('button') || e.target.closest('a')) {
         // Para fins de demonstração, deixarei 30% de chance para aparecer mais frequentemente
