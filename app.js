@@ -167,6 +167,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnGayNao = document.getElementById('btn-gay-nao')
     const gayError = document.getElementById('gay-error')
 
+    // Check if the user already answered 'Sim' to Marcelo Pires
+    if (localStorage.getItem('onboarding_marcelo') === 'true') {
+      step1.classList.add('hidden')
+      step2.classList.remove('hidden')
+    }
+
     modal.classList.remove('hidden')
     setTimeout(() => modal.classList.add('active'), 10)
 
@@ -184,6 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     btnMarceloSim.addEventListener('click', () => {
+      localStorage.setItem('onboarding_marcelo', 'true')
       step1.classList.add('hidden')
       step2.classList.remove('hidden')
     })
