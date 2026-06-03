@@ -11,7 +11,7 @@ export default async function handler(req, res) {
   if (username === 'Admin' && password === 'InvestDream@2026') {
     const token = jwt.sign(
       { username: 'Admin', role: 'admin' },
-      process.env.JWT_SECRET || 'fallback_secret_for_dev_only',
+      process.env.JWT_SECRET || 'new_fallback_secret_for_dev_only',
       { expiresIn: '1d' },
     )
 

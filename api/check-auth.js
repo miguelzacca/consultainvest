@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   try {
     const decoded = jwt.verify(
       token,
-      process.env.JWT_SECRET || 'fallback_secret_for_dev_only',
+      process.env.JWT_SECRET || 'new_fallback_secret_for_dev_only',
     )
     return res.status(200).json({ authenticated: true, user: decoded })
   } catch (err) {

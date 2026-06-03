@@ -13,7 +13,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    jwt.verify(token, process.env.JWT_SECRET || 'fallback_secret_for_dev_only')
+    jwt.verify(token, process.env.JWT_SECRET || 'new_fallback_secret_for_dev_only')
   } catch (err) {
     return res.status(401).json({ error: 'Sessão inválida' })
   }
