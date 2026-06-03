@@ -277,59 +277,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-  // Onboarding Logic
-  const initOnboarding = () => {
-    if (localStorage.getItem('onboarding_completed') === 'true') {
-      checkAuth()
-      return
-    }
-
-    const modal = document.getElementById('onboarding-modal')
-    const step1 = document.getElementById('onboarding-step-1')
-    const step2 = document.getElementById('onboarding-step-2')
-    const btnMarceloSim = document.getElementById('btn-marcelo-sim')
-    const btnMarceloNao = document.getElementById('btn-marcelo-nao')
-    const btnGaySim = document.getElementById('btn-gay-sim')
-    const btnGayNao = document.getElementById('btn-gay-nao')
-    const gayError = document.getElementById('gay-error')
-
-    // Check if the user already answered 'Sim' to Marcelo Pires
-    if (localStorage.getItem('onboarding_marcelo') === 'true') {
-      step1.classList.add('hidden')
-      step2.classList.remove('hidden')
-    }
-
-    modal.classList.remove('hidden')
-    setTimeout(() => modal.classList.add('active'), 10)
-
-    const closeModal = () => {
-      modal.classList.remove('active')
-      setTimeout(() => {
-        modal.classList.add('hidden')
-        checkAuth()
-      }, 300)
-      localStorage.setItem('onboarding_completed', 'true')
-    }
-
-    btnMarceloNao.addEventListener('click', () => {
-      closeModal()
-    })
-
-    btnMarceloSim.addEventListener('click', () => {
-      localStorage.setItem('onboarding_marcelo', 'true')
-      step1.classList.add('hidden')
-      step2.classList.remove('hidden')
-    })
-
-    btnGayNao.addEventListener('click', () => {
-      gayError.textContent = 'Resposta errada'
-    })
-
-    btnGaySim.addEventListener('click', () => {
-      closeModal()
-    })
-  }
-
   // Init
-  initOnboarding()
+  checkAuth()
 })
