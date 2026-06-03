@@ -16,6 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const downloadLink = document.getElementById('download-link')
   const closeResult = document.getElementById('close-result')
 
+  const balanceAmount = document.getElementById('balance-amount')
+  const openBalanceModalBtn = document.getElementById('open-balance-modal-btn')
+  const addBalanceModal = document.getElementById('add-balance-modal')
+  const addBalanceForm = document.getElementById('add-balance-form')
+  const generatePixBtn = document.getElementById('generate-pix-btn')
+  const cancelBalanceBtn = document.getElementById('cancel-balance-btn')
+  const balanceError = document.getElementById('balance-error')
+  const addBalanceStep1 = document.getElementById('add-balance-step-1')
+  const addBalanceStep2 = document.getElementById('add-balance-step-2')
+  const pixCopyPaste = document.getElementById('pix-copy-paste')
+  const copyPixBtn = document.getElementById('copy-pix-btn')
+  const closeBalanceBtn = document.getElementById('close-balance-btn')
+
   // Utility: Show/Hide Spinner in buttons
   const setButtonLoading = (btn, isLoading) => {
     const span = btn.querySelector('span')
@@ -56,6 +69,26 @@ document.addEventListener('DOMContentLoaded', () => {
     dashboardView.classList.remove('hidden')
     // Slight delay to allow display:block to apply before fading in
     setTimeout(() => dashboardView.classList.add('active'), 50)
+    fetchBalance()
+  }
+
+  const fetchBalance = async () => {
+    try {
+      const res = await fetch('/api/balance')
+      if (res.ok) {
+        const data = await res.json()
+        if (data.success && data.balance !== undefined) {
+          balanceAmount.textContent = `R$ ${Number(data.balance).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+        } else {
+          balanceAmount.textContent = 'R$ 0,00'
+        }
+      } else {
+        balanceAmount.textContent = 'R$ 0,00'
+      }
+    } catch (err) {
+      console.error('Error fetching balance:', err)
+      balanceAmount.textContent = 'R$ 0,00'
+    }
   }
 
   const showLogin = () => {
@@ -149,6 +182,69 @@ document.addEventListener('DOMContentLoaded', () => {
   closeResult.addEventListener('click', () => {
     resultContainer.classList.add('hidden')
     pdfViewer.src = ''
+  })
+
+  // 4. Balance Logic
+  const openBalanceModal = () => {
+    addBalanceStep1.classList.remove('hidden')
+    addBalanceStep2.classList.add('hidden')
+    balanceError.textContent = ''
+    document.getElementById('balance-value').value = ''
+    
+    addBalanceModal.classList.remove('hidden')
+    setTimeout(() => addBalanceModal.classList.add('active'), 10)
+  }
+
+  const closeBalanceModal = () => {
+    addBalanceModal.classList.remove('active')
+    setTimeout(() => addBalanceModal.classList.add('hidden'), 300)
+    fetchBalance() // refresh balance just in case
+  }
+
+  openBalanceModalBtn.addEventListener('click', openBalanceModal)
+  cancelBalanceBtn.addEventListener('click', closeBalanceModal)
+  closeBalanceBtn.addEventListener('click', closeBalanceModal)
+
+  addBalanceForm.addEventListener('submit', async (e) => {
+    e.preventDefault()
+    balanceError.textContent = ''
+    setButtonLoading(generatePixBtn, true)
+
+    const value = document.getElementById('balance-value').value
+
+    try {
+      const res = await fetch('/api/payment', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ value }),
+      })
+
+      const data = await res.json()
+
+      if (res.ok && data.success && data.pixData) {
+        pixCopyPaste.value = data.pixData.qr_code || ''
+        addBalanceStep1.classList.add('hidden')
+        addBalanceStep2.classList.remove('hidden')
+      } else {
+        balanceError.textContent = data.error || 'Erro ao gerar Pix'
+      }
+    } catch (err) {
+      balanceError.textContent = 'Erro de conexão com o servidor'
+    } finally {
+      setButtonLoading(generatePixBtn, false)
+    }
+  })
+
+  copyPixBtn.addEventListener('click', () => {
+    pixCopyPaste.select()
+    pixCopyPaste.setSelectionRange(0, 99999) // For mobile devices
+    navigator.clipboard.writeText(pixCopyPaste.value).then(() => {
+      const originalHtml = copyPixBtn.innerHTML
+      copyPixBtn.innerHTML = '<span><i class="fa-solid fa-check"></i> Copiado!</span>'
+      setTimeout(() => {
+        copyPixBtn.innerHTML = originalHtml
+      }, 2000)
+    })
   })
 
   // Onboarding Logic

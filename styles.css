@@ -317,6 +317,69 @@ body {
   font-size: 1.5rem;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.balance-badge {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--glass-border);
+  border-radius: 30px;
+  padding: 0.25rem 0.25rem 0.25rem 1rem;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.balance-badge:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: var(--primary);
+}
+
+.balance-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.balance-label {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.balance-amount {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--success);
+  line-height: 1;
+}
+
+.btn-icon-small {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-icon-small:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.4);
+}
+
 .user-profile {
   display: flex;
   align-items: center;

@@ -49,6 +49,46 @@
       </div>
     </div>
 
+    <!-- Add Balance Modal -->
+    <div id="add-balance-modal" class="modal-overlay hidden">
+      <div class="glass-card onboarding-card">
+        <div id="add-balance-step-1">
+          <div class="card-header" style="margin-bottom: 1rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Adicionar Saldo</h3>
+            <p style="color: var(--text-muted);">Insira o valor para gerar o Pix</p>
+          </div>
+          <form id="add-balance-form">
+            <div class="input-group">
+              <i class="fa-solid fa-money-bill-wave"></i>
+              <input type="number" id="balance-value" placeholder="Valor (R$)" required min="1" step="any" />
+            </div>
+            <button type="submit" class="btn-primary" id="generate-pix-btn" style="margin-top: 1rem;">
+              <span>Gerar Pix</span>
+              <div class="spinner hidden"></div>
+            </button>
+            <button type="button" class="btn-secondary" id="cancel-balance-btn" style="width: 100%; margin-top: 1rem; justify-content: center;">Cancelar</button>
+            <p id="balance-error" class="error-msg"></p>
+          </form>
+        </div>
+        <div id="add-balance-step-2" class="hidden">
+          <div class="card-header" style="margin-bottom: 1rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Pagamento Pix</h3>
+            <p style="color: var(--text-muted);">Copie o código abaixo e pague no seu banco</p>
+          </div>
+          <div class="pix-qrcode-container" style="background: white; padding: 15px; border-radius: 12px; margin-bottom: 1rem; display: inline-block;">
+            <i class="fa-brands fa-pix" style="font-size: 4rem; color: #32bcad;"></i>
+          </div>
+          <div class="input-group">
+            <input type="text" id="pix-copy-paste" readonly style="font-size: 0.85rem; padding-left: 1rem; text-align: center; color: #cbd5e1;" />
+          </div>
+          <button type="button" class="btn-primary" id="copy-pix-btn" style="margin-top: 0.5rem;">
+            <span><i class="fa-solid fa-copy"></i> Copiar Código</span>
+          </button>
+          <button type="button" class="btn-secondary" id="close-balance-btn" style="width: 100%; margin-top: 1rem; justify-content: center;">Fechar</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Login View -->
     <div id="login-view" class="view-container active">
       <div class="glass-card login-card">
@@ -84,9 +124,20 @@
           <i class="fa-solid fa-chart-line logo-icon"></i>
           <h2>Consulta Invest</h2>
         </div>
-        <div class="user-profile">
-          <div class="avatar"><i class="fa-solid fa-user-shield"></i></div>
-          <span>Admin</span>
+        <div class="header-actions">
+          <div class="balance-badge" id="balance-badge" title="Adicionar Saldo">
+            <div class="balance-info">
+              <span class="balance-label">Saldo</span>
+              <span class="balance-amount" id="balance-amount">R$ ---</span>
+            </div>
+            <button id="open-balance-modal-btn" class="btn-icon-small">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="user-profile">
+            <div class="avatar"><i class="fa-solid fa-user-shield"></i></div>
+            <span>Admin</span>
+          </div>
         </div>
       </nav>
 
