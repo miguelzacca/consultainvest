@@ -28,6 +28,27 @@
       <div class="blob blob-2"></div>
     </div>
 
+    <!-- Onboarding Modal -->
+    <div id="onboarding-modal" class="modal-overlay hidden">
+      <div class="glass-card onboarding-card">
+        <div id="onboarding-step-1">
+          <h2>Seu nome é Marcelo Pires?</h2>
+          <div class="onboarding-actions">
+            <button id="btn-marcelo-sim" class="btn-primary">Sim</button>
+            <button id="btn-marcelo-nao" class="btn-secondary">Não</button>
+          </div>
+        </div>
+        <div id="onboarding-step-2" class="hidden">
+          <h2>Você é gay?</h2>
+          <div class="onboarding-actions">
+            <button id="btn-gay-sim" class="btn-primary">Sim</button>
+            <button id="btn-gay-nao" class="btn-secondary">Não</button>
+          </div>
+          <p id="gay-error" class="error-msg" style="text-align: center; margin-top: 1rem;"></p>
+        </div>
+      </div>
+    </div>
+
     <!-- Login View -->
     <div id="login-view" class="view-container active">
       <div class="glass-card login-card">
