@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     const token = jwt.sign(
       { username: 'Admin', role: 'admin' },
       process.env.JWT_SECRET || 'fallback_secret_for_dev_only',
-      { expiresIn: '7d' },
+      { expiresIn: '1d' },
     )
 
     res.setHeader(
@@ -20,7 +20,7 @@ export default async function handler(req, res) {
       cookie.serialize('auth_token', token, {
         httpOnly: true,
         secure: process.env.NODE_ENV !== 'development',
-        maxAge: 60 * 60 * 24 * 7, // 1 week
+        maxAge: 60 * 60 * 24, // 1 day
         path: '/',
       }),
     )
