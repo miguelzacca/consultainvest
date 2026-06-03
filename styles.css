@@ -468,9 +468,37 @@ body {
   flex-direction: row;
 }
 
+.mock-ad-wrapper.format-horizontal .mock-ad-image-wrapper {
+  width: 300px;
+  min-width: 300px;
+  border-bottom: none;
+  border-right: 1px solid #dadce0;
+  padding: 24px;
+}
+
 .mock-ad-wrapper.format-horizontal .mock-ad-img {
-  width: 150px;
-  height: auto;
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.mock-ad-wrapper.format-horizontal .mock-ad-text {
+  padding: 24px;
+  justify-content: center;
+}
+
+.mock-ad-wrapper.format-horizontal .mock-ad-text h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.mock-ad-wrapper.format-horizontal .mock-ad-text p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.mock-ad-wrapper.format-horizontal .mock-ad-footer {
+  margin-top: 24px;
 }
 
 .mock-ad-content {
@@ -523,6 +551,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 8px;
+  gap: 12px;
 }
 
 .mock-ad-domain {
@@ -533,10 +562,12 @@ body {
 .mock-ad-cta {
   background: #1a73e8;
   color: #fff;
-  padding: 6px 12px;
+  padding: 8px 16px;
   border-radius: 16px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .mock-ad-closed {
