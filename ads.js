@@ -27,8 +27,24 @@
     }
   ];
 
+  let usedAdIndices = [];
+
   function getRandomAd() {
-    return adsData[Math.floor(Math.random() * adsData.length)];
+    if (usedAdIndices.length >= adsData.length) {
+      usedAdIndices = []; // Reinicia quando todos já foram usados
+    }
+    
+    let availableIndices = [];
+    for (let i = 0; i < adsData.length; i++) {
+      if (!usedAdIndices.includes(i)) {
+        availableIndices.push(i);
+      }
+    }
+    
+    const randomIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)];
+    usedAdIndices.push(randomIndex);
+    
+    return adsData[randomIndex];
   }
 
   function createAdChoicesHeader() {
